@@ -1,0 +1,39 @@
+{
+  "questions": [
+    {
+      "question": "RetroAgent 有哪些核心功能？",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9056141376495361,
+      "context_relevancy_dense": 0.6666666666666666,
+      "context_relevancy_hybrid": 1.0
+    },
+    {
+      "question": "RetroAgent 是什么时候、在哪里创立的？",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9669286807378134,
+      "context_relevancy_dense": 0.3333333333333333,
+      "context_relevancy_hybrid": 0.3333333333333333
+    },
+    {
+      "question": "RetroAgent 的核心思想是什么？",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.8339643478393555,
+      "context_relevancy_dense": 0.6666666666666666,
+      "context_relevancy_hybrid": 0.6666666666666666
+    },
+    {
+      "question": "RetroAgent 支持哪些编程语言？",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9032505551973978,
+      "context_relevancy_dense": 0.0,
+      "context_relevancy_hybrid": 0.0
+    }
+  ],
+  "average": {
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.902,
+    "context_relevancy_dense": 0.417,
+    "context_relevancy_hybrid": 0.5
+  },
+  "k": 3
+}

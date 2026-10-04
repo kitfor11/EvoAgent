@@ -16,5 +16,9 @@ chromadb==1.5.9
 # protobuf 锁 7.x 给 chromadb；paddle 的老生成代码靠 PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python 兼容（见 config.py）
 protobuf==7.36.2
 
+# 混合检索（BM25 稀疏 + 向量稠密，RRF 融合）
+rank_bm25>=0.2.2
+jieba>=0.42.1
+
 # 单元测试（第 9 步）
 pytest>=8.0.0

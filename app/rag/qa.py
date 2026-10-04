@@ -8,9 +8,12 @@ from app.llm import chat
 from app.rag.store import ChromaStore
 
 
-def rag_answer(question: str, store: ChromaStore, k: int = 3) -> dict:
-    """RAG 问答，返回 {answer, sources}（接口层用，能同时拿到回答和引用来源）。"""
-    hits = store.search(question, k=k)
+def rag_answer(question: str, store: ChromaStore, k: int = 3, hybrid: bool = True) -> dict:
+    """RAG 问答，返回 {answer, sources}（接口层用，能同时拿到回答和引用来源）。
+
+    hybrid=True 走混合检索（稠密 + BM25 稀疏 + RRF 融合），False 走纯向量检索。
+    """
+    hits = store.hybrid_search(question, k=k) if hybrid else store.search(question, k=k)
     sources = [h["source"] for h in hits]
     if not hits:
         return {"answer": "（没有检索到相关内容）", "sources": sources}

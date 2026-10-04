@@ -1,0 +1,103 @@
+{
+  "tasks": [
+    "Reverse the text 'hello world'.",
+    "Count the words in 'the quick brown fox jumps'.",
+    "Convert the text 'hello agent' to uppercase.",
+    "Convert the text 'HELLO AGENT' to lowercase.",
+    "List all files in the current directory."
+  ],
+  "cold": [
+    {
+      "task": "Reverse the text 'hello world'.",
+      "method": "solved",
+      "time_s": 2.48,
+      "llm_calls": 4,
+      "trace_steps": 2,
+      "error": null
+    },
+    {
+      "task": "Count the words in 'the quick brown fox jumps'.",
+      "method": "solved",
+      "time_s": 2.42,
+      "llm_calls": 4,
+      "trace_steps": 2,
+      "error": null
+    },
+    {
+      "task": "Convert the text 'hello agent' to uppercase.",
+      "method": "solved",
+      "time_s": 2.79,
+      "llm_calls": 4,
+      "trace_steps": 2,
+      "error": null
+    },
+    {
+      "task": "Convert the text 'HELLO AGENT' to lowercase.",
+      "method": "reused_skill",
+      "time_s": 1.21,
+      "llm_calls": 2,
+      "trace_steps": 2,
+      "error": null
+    },
+    {
+      "task": "List all files in the current directory.",
+      "method": "solved",
+      "time_s": 2.85,
+      "llm_calls": 4,
+      "trace_steps": 2,
+      "error": null
+    }
+  ],
+  "warm": [
+    {
+      "task": "Reverse the text 'hello world'.",
+      "method": "reused_skill",
+      "time_s": 1.16,
+      "llm_calls": 2,
+      "trace_steps": 2,
+      "error": null
+    },
+    {
+      "task": "Count the words in 'the quick brown fox jumps'.",
+      "method": "reused_skill",
+      "time_s": 0.78,
+      "llm_calls": 2,
+      "trace_steps": 2,
+      "error": null
+    },
+    {
+      "task": "Convert the text 'hello agent' to uppercase.",
+      "method": "reused_skill",
+      "time_s": 1.02,
+      "llm_calls": 2,
+      "trace_steps": 2,
+      "error": null
+    },
+    {
+      "task": "Convert the text 'HELLO AGENT' to lowercase.",
+      "method": "reused_skill",
+      "time_s": 1.11,
+      "llm_calls": 2,
+      "trace_steps": 2,
+      "error": null
+    },
+    {
+      "task": "List all files in the current directory.",
+      "method": "reused_skill",
+      "time_s": 1.49,
+      "llm_calls": 2,
+      "trace_steps": 2,
+      "error": null
+    }
+  ],
+  "summary": {
+    "speedup_x": 2.12,
+    "llm_call_reduction_pct": 44.0,
+    "avg_time_s": 2.35,
+    "avg_llm_calls": 3.6,
+    "success_rate": 1.0,
+    "reuse_hit_rate": 1.0,
+    "cold_success_rate": 1.0,
+    "warm_success_rate": 1.0
+  }
+}

@@ -191,7 +191,7 @@ def search_docs(query: str, k: int = 3) -> str:
     except (TypeError, ValueError):
         k = 3
 
-    hits = store.search(query, k=k)
+    hits = store.hybrid_search(query, k=k)
     if not hits:
         return "(知识库为空或没有检索到相关内容)"
     return "\n".join(f"[{h['source']}] {h['text']}" for h in hits)
